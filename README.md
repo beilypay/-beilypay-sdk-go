@@ -29,8 +29,8 @@ client := beilypay.BeilypayClient{AppID, MerchantId, AppSecret, Domain}
 //创建代收交易
 func CreatePayment(client beilypay.BeilypayClient) {
     pr := beilypay.PaymentReq{}
-    pr.NotifyURL = "http://www.baidu.com/"
-    pr.FrontCallback = "http://www.baidu.com/"
+    pr.NotifyURL = "https://www.baidu.com/"
+    pr.FrontCallback = "https://www.baidu.com/"
     pr.OutOrderNo = "outOrderNo"//订单号不能重复
     pr.PayAmount = 500
     pr.Email = "4567546845@qq.com"
@@ -64,7 +64,7 @@ func CreateTrans(client beilypay.BeilypayClient) {
     pr.Email = "email"
     pr.Ifsc = "ifsc"
     pr.Mobile = "mobile"
-    pr.NotifyURL = "www.baidu.com"
+    pr.NotifyURL = "https://www.baidu.com"
     pr.OutOrderNo = "outOrderNo" //订单号不能重复
     pr.PayAmount = 500
     payment, err := client.CreateTrans(pr)

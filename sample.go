@@ -1,8 +1,8 @@
 package main
 
 import (
-	"cool.com/beilypay-sdk-go/beilypay" //根据自己的目录查找
 	"fmt"
+	"github.com/beilypay/beilypay-sdk-go/beilypay"
 )
 
 func main() {
@@ -17,8 +17,8 @@ func main() {
 //创建代收交易
 func CreatePayment(client beilypay.BeilypayClient) {
 	pr := beilypay.PaymentReq{}
-	pr.NotifyURL = "www.baidu.com"
-	pr.FrontCallback = "www.aaa.com"
+	pr.NotifyURL = "https://www.baidu.com"
+	pr.FrontCallback = "https://www.aaa.com"
 	pr.OutOrderNo = "123456a4a8a6aaa26"
 	pr.PayAmount = 500
 	pr.Email = "4567546845@qq.com"
@@ -56,7 +56,7 @@ func CreateTrans(client beilypay.BeilypayClient) {
 	pr.Email = "54325@qq.com"
 	pr.Ifsc = "4325a"
 	pr.Mobile = "13856856540"
-	pr.NotifyURL = "www.baidu.com"
+	pr.NotifyURL = "https://www.baidu.com"
 	pr.OutOrderNo = "45645***23123a3" //
 	pr.PayAmount = 500
 	payment, err := client.CreateTrans(pr)

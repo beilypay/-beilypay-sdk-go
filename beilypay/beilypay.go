@@ -2,10 +2,10 @@ package beilypay
 
 import (
 	"bytes"
-	"cool.com/beilypay-sdk-go/util" //根据自己的目录查找
 	"crypto/md5"
 	"encoding/json"
 	"fmt"
+	"github.com/beilypay/beilypay-sdk-go/util" //根据自己的目录查找
 	"reflect"
 	"sort"
 	"strings"
