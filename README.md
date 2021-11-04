@@ -2,8 +2,7 @@
 
 ## 一、API 文档
 
-API文档详见 https://github.com/beilypay/beilypay-sdk-java/wiki
-
+API文档详见 https://github.com/beilypay/beilypay-api-doc
 ## 二、创建 Beilypay 实例
 
 ```go
@@ -47,7 +46,7 @@ func CreatePayment(client beilypay.BeilypayClient) {
 ```
 
 - 返回的是 PaymentReqData 结构体
-- API: https://github.com/beilypay/beilypay-sdk-java/wiki#%E4%BB%A3%E4%BB%98%E4%B8%8B%E5%8D%95
+- API: https://github.com/beilypay/beilypay-api-doc
 
 
 ## 四、创建代付订单
@@ -76,7 +75,7 @@ func CreateTrans(client beilypay.BeilypayClient) {
 }
 ```
 - 返回的是 TransReqData 结构体
-- API: https://github.com/beilypay/beilypay-sdk-java/wiki#%E4%BB%A3%E4%BB%98%E4%B8%8B%E5%8D%95
+- API: https://github.com/beilypay/beilypay-api-doc
 
 
 ## 五、查询代收订单
@@ -94,8 +93,7 @@ func QueryPayment(client beilypay.BeilypayClient) {
 }
 ```
 - 返回的是 PaymentQueryReqData 结构体，字段 status 表示订单状态
-- API: https://github.com/beilypay/beilypay-sdk-java/wiki#%E4%BB%A3%E6%94%B6%E5%8D%95%E7%8A%B6%E6%80%81%E6%9F%A5%E8%AF%A2
-
+- API: https://github.com/beilypay/beilypay-api-doc
 
 ## 五、查询代付订单
 
@@ -112,7 +110,7 @@ func QueryTrans(client beilypay.BeilypayClient) {
 }
 ```
 - 返回的是 TransQueryReqData 结构体，字段 status 表示订单状态
-- API: https://github.com/beilypay/beilypay-sdk-java/wiki#%E4%BB%A3%E4%BB%98%E7%8A%B6%E6%80%81%E6%9F%A5%E8%AF%A2
+- API: https://github.com/beilypay/beilypay-api-doc
 
 
 ## 六、回调校验 示例
@@ -122,7 +120,7 @@ func QueryTrans(client beilypay.BeilypayClient) {
 beilypay.Verify(data map[string]interface{}, key string) bool 
 
 ```
-- API: https://github.com/beilypay/beilypay-sdk-java/wiki#%E4%BB%A3%E6%94%B6%E5%BC%82%E6%AD%A5%E9%80%9A%E7%9F%A5
+- API: https://github.com/beilypay/beilypay-api-doc
 
 ## 七、测试代码
 
